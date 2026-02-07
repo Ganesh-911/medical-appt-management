@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  apiKey: "AIzaSyDmDTdT-DD_TzYlf4Dc4gjlJS-ivbzSe1M",
+  authDomain: "medicalappt123456789.firebaseapp.com",
+  projectId: "medicalappt123456789",
+  storageBucket: "medicalappt123456789.firebasestorage.app",
+  messagingSenderId: "951350240807",
+  appId: "1:951350240807:web:aeb5605446036c44a85002"
 };
 
 const app = initializeApp(firebaseConfig);

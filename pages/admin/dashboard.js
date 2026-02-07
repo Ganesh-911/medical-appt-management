@@ -28,8 +28,8 @@ export default function AdminDashboard() {
     await updateDoc(doc(db, "appointments", appt.id), { status });
 
     await emailjs.send(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      "service_mlhknnl",
+      "template_f3f1z3f",
       {
         patient_name: appt.patientName,
         doctor: appt.doctor,
@@ -38,7 +38,7 @@ export default function AdminDashboard() {
         status,
         to_email: appt.email,
       },
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      "V66wkSpBGZiQ5sOFv"
     );
 
     fetchAppointments();
